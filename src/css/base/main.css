@@ -17,3 +17,6 @@ body {
     font-size: var(--text-xl);
   }
   
+  button {
+    border: none;
+  }
