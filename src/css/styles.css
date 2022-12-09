@@ -1,4 +1,4 @@
-/*@import url();*/
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;700&family=Outfit:wght@700&family=STIX+Two+Text&family=Staatliches&display=swap');
 @import "vendors/normalize.css";
 @import "utils/variables.css";
 @import "base/main.css";
