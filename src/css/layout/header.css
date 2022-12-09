@@ -1,11 +1,11 @@
 .header {
-    position: fixed;
+    position: sticky;
     background-color: #000;
     width: 100%;
     height: 90px;
     top: 0;
     left: 0;
-    right: 0;
+    right: 3;
     z-index: 2;
     padding: var(--space2x) var(--space3x);
     display:flex;
@@ -17,10 +17,18 @@
     gap: var(--space2x);
   }
   
-  .header__search {
-    width: 40px;
-  }
-  
   .header__logo {
     display: block;
   }
+.header__search {
+    margin: none;
+    border: none;
+    background-color: transparent;
+}
+
+.header__menu-btn {
+    width: 40px;
+    margin: none;
+    border: none;
+    background-color: transparent;
+}
