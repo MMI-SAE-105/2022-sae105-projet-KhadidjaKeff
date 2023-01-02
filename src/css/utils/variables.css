@@ -1,6 +1,10 @@
 :root{
 /* Color styles */
 
+--noir: rgba(15,15,15,1);
+--orange:rgba(245,100,22,1);
+--blanc:rgba(246,248,255,1);
+
 /* Text-size styles */
 --title:22px;
 --under-title: 14px;
@@ -18,7 +22,14 @@
 
 /* Font-weight */
 
+--regular:400;
+--bold:700;
+--light:300;
+--light-italic:300;
+
 /* Text styles */
+
+
 
 /* Effect styles */
 

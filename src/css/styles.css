@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;700&family=Outfit:wght@700&family=STIX+Two+Text&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,300&display=swap');
 @import "vendors/normalize.css";
 @import "utils/variables.css";
 @import "base/main.css";
@@ -6,3 +7,4 @@
 @import "layout/header.css";
 @import "layout/footer.css";
 @import "components/menu.css";
+@import "/2022-sae105-projet-KhadidjaKeff/src/css/components/table_content.css"
