@@ -1,0 +1,34 @@
+.footer {
+    background-color: black;
+    color: black;
+    padding: var(--space4x) var(--space3x);
+  }
+  
+  footer a {
+    color: var(--gray-400);
+    text-decoration: none;
+  }
+  
+  .footer__list {
+    display: flex;
+    gap: var(--space3x);
+  }
+  
+  .footer__list img {
+    filter: invert(60%);
+  }
+  
+  .footer__address {
+    font-style: normal;
+  }
+  
+  .footer__title {
+    margin-top: 0;
+    text-transform: uppercase;
+    font-size: var(--text-sm);
+    letter-spacing: var(--letter-spacing);
+  }
+  
+  .footer > *:not(:first-child) {
+    margin-top: var(--space3x);
+  }
