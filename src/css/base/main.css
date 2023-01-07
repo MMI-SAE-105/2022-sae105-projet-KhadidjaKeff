@@ -4,20 +4,43 @@ body {
     line-height: 1.6;
     background-color: var(--gray-white);
   }
+
+
    
   h1, h2 {
     font-family: var(--font-mono);
   }
    
   h1 {
-    font-size: var(--text-xxl);
+    font-family:'Staatliches'
   }
    
   h2 {
     font-size: var(--text-xl);
+  }
+
+  p {
+    font-family: 'Mulish';
   }
   
   button {
     border: none;
   }
 
+
+
+.mainone__header {
+display: flex;
+flex-direction: column;
+
+position: absolute;
+width: 404.21px;
+height: 394.16px;
+left: -28px;
+top: 99px;
+
+} 
+
+.index_title {
+    font-family: 'Mulish';
+  }

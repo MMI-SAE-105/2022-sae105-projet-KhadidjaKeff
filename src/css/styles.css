@@ -7,4 +7,6 @@
 @import "layout/header.css";
 @import "layout/footer.css";
 @import "components/menu.css";
-@import "/2022-sae105-projet-KhadidjaKeff/src/css/components/table_content.css"
+@import "/2022-sae105-projet-KhadidjaKeff/src/css/components/card.css";
+@import "/2022-sae105-projet-KhadidjaKeff/src/css/components/table_content.css";
+@import "/2022-sae105-projet-KhadidjaKeff/src/fonts/typography.css"

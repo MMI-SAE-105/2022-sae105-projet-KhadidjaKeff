@@ -1,0 +1,40 @@
+/* Mise en forme du carousel en CSS.
+Utiliser flex pour positionner les item du carousel les uns à coté des autres.
+La propriété "overflow-x" avec la valeur "scroll" permet rogner le contenu afin de tenir horizontalement dans la boîte de remplissage et d'ajouter un scroll horizontal si le contenu déborde.
+https://developer.mozilla.org/fr/docs/Web/CSS/overflow-x
+La propriété "scroll-snap-type" définit la force d'adhérence aux points d'accroche en cas de défilement d'un conteneur
+https://developer.mozilla.org/fr/docs/Web/CSS/scroll-snap-type
+Les margin négatifs à gauche et à droite corresponde à l'éespace entre le navigateur et le début du contenu, de sorte que le carousel soit collé au bords de l'écran.
+*/
+.carousel {
+    display: flex;
+    gap: var(--space2x);
+    overflow-x: scroll;
+    margin-left: calc(0px - var(--space3x));
+    margin-right: calc(0px - var(--space3x));
+    scroll-snap-type: x mandatory;
+  }
+  
+  .carousel__item {
+    flex: 1 0 260px;
+    scroll-snap-align: center;
+  }
+  
+  .carousel__item img {
+    display: block;
+  }
+  
+  /* pour personnaliser graphiquement la barre d'ascenseur */
+  
+  .carousel::-webkit-scrollbar-track {
+    background-color: var(--gray-200);
+  }
+  
+  .carousel::-webkit-scrollbar {
+    height: 4px;
+    background-color: var(--gray-white);
+  }
+  
+  .carousel::-webkit-scrollbar-thumb {
+    background-color: var(--brand-saumon);
+  }

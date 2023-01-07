@@ -12,6 +12,7 @@
 }
 
 .menu_item {
+    font-style: --Mulish;
     color: white;
     display: flex;
     flex-direction: column;

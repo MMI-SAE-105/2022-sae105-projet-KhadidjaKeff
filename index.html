@@ -1,0 +1,175 @@
+<html lang="fr" x-data="{menuIsOpen: false}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Site RoadMap">
+
+    <title class="index_title">roadmap</title>
+      
+     <!--CSS -->
+
+      <link rel="stylesheet" href="./2022-sae105-projet-KhadidjaKeff/src/css/styles.css">
+      <link rel="shortcut icon" href="/2022-sae105-projet-KhadidjaKeff/public/favicon/LOGO blck.ico" type="image/x-icon">
+      <script src="https://unpkg.com/alpinejs" defer></script> 
+
+      <!--FONTS-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--En-tête de page-->
+
+    <header class="header">
+    
+      <div class="header__start">
+        <a href="index.html">
+         <img class="header__logo" src="/2022-sae105-projet-KhadidjaKeff/public/img/img/logoentier.png" alt="logo du site RoadMap">
+        </a>
+      </div>
+
+<div class="header__end">
+  <button class="header__search">
+    <img src="/2022-sae105-projet-KhadidjaKeff/public/img/icone/recherche.svg" alt="icone de recherche">
+  </button>
+</div>
+ 
+  <button class="header__menu-btn" 
+          @click="menuIsOpen = !menuIsOpen" 
+          :class="menuIsOpen && 'menu-btn--open'">
+    <span class="menu-btn__bar"></span>
+    <img src="/2022-sae105-projet-KhadidjaKeff/public/img/icone/menu.svg" alt="icone de menu">
+  </button>
+
+  <!--Menu principal -->
+  
+  <div x-data="show">
+    <button>
+      <span class="menu-btn__bar"></span>
+    </button>
+    <nav id="MainNav" class="header__nav" x-show="menuIsOpen" x-transition>
+
+      <ul class="menu__list">
+        <li class="header__nav--item"><a class="menu_item" href="/lieu.html">Lieux à découvrir </a></li>
+        <li class="header__nav--item"><a class="menu_item" href="/musique.html"> Une chanson pour s'évader </a></li>
+        <li class="header__nav--item"><a class="menu_item" href="/livre.html"> Un carnet à découvrir </a></li>
+        <li class="header__nav--item"><a class="menu_item" href="/regret.html"> Le regret de ma génération</a></li>
+        <li class="header__nav--item"><a class="menu_item" href="/espoir.html">L'espoir de ma génération </a></li>
+        <li class="header__nav--item"><a class="menu_item" href="/glossaire.html">Glossaire</a></li>
+        <li class="header__nav--item"><a class="menu_item" href="/projets.html">Autres Projets</a></li>
+        <li class="header__nav--item"><a class="menu_item" href="/film.html">Film</a></li>
+        <li class="header__nav--item"><a class="menu_item" href="/contact.html"> Contact </a></li>
+        <li class="header__nav--item"><a class="menu_item" href="/apropos.html"> À propos </a></li>
+      </ul>
+    </nav>
+  </div>
+
+    </header>
+
+<!--CONTENU PRINCIPAL-- MAIN -->
+
+<main>
+
+<div class="mainone">
+ <div class="mainone__header">
+  <h1 class="mainone__title">roadmap</h1>
+  <h2 style="font-family: mullish ;" class="mainone__sub-title">Voyagez pour vous découvrir</h2>
+</div>
+</div>
+<img class="header__intro" src="/2022-sae105-projet-KhadidjaKeff/public/img/header__intro/bohnomme1index.webp" alt="Illustration">
+
+<!-- CARDS -->
+
+<div class="mainone__card">
+  <h3 class="div1" >Pour s'inspirer </h3>
+    <a href="/film.html">
+      <img class="div2" src="/2022-sae105-projet-KhadidjaKeff/public/img/img/homepage/waltermittyhome.webp" alt="Affiche film Walter Mitty "> 
+    </a>
+
+<div class="mainone__card">
+  <h3 class="div1" >Lieux à découvrir</h3>
+     <a href="/lieu.html">
+       <img class="div2" src="/2022-sae105-projet-KhadidjaKeff/public/img/img/homepage/montainshome.webp" alt="Image de montagnes enneigées"> 
+     </a>
+
+<div class="mainone__card">
+  <h3 class="div1" >Mini lecture..</h3>
+     <a href="/livre.html">
+        <img class="div2" src="/2022-sae105-projet-KhadidjaKeff/public/img/img/homepage/carnetintimehome.webp" alt="Illustration de Zep"> 
+      </a>
+
+<div class="mainone__card">
+   <h3 class="div1" >Besoin de chantonner ?</h3>
+    <a href="/musique.html">
+      <img class="div2" src="/2022-sae105-projet-KhadidjaKeff/public/img/img/homepage/tameimpalahome.webp" alt="Cover de l'Album Tame Impala"> 
+    </a>
+
+<div class="mainone__card">
+   <h3 class="div1" > Santé mentale </h3>
+     <a href="/espoir.html">
+       <img class="div2" src="/2022-sae105-projet-KhadidjaKeff/public/img/img/homepage/espoirhome.webp" alt="Image d'illustration, homme qui fait de la randonnée"> 
+     </a>
+
+<div class="mainone__card">
+    <h3 class="div1" > Santé mentale </h3>
+      <a href="/espoir.html">
+         <img class="div2" src="/2022-sae105-projet-KhadidjaKeff/public/img/img/homepage/espoirhome.webp" alt="Image d'illustration, homme qui fait de la randonnée"> 
+       </a>
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <!-- Pied de page --> 
+
+    <footer class="footer">
+
+      <img class="footer__logo" src="assets/icones/icon_logoFooter.svg" alt="Logo du Conservatoire de Belfort">
+  
+      <nav class="footer__menu">
+        <h3 class="footer__title">Menu</h3>
+        <ul class="list-unstyled">
+          <li><a href="#">Mentions légales</a></li>
+          <li><a href="#">Archives</a></li>
+          <li><a href="#">Contact et accès</a></li>
+        </ul>
+      </nav>
+  
+      <div class="footer__contact">
+        <h3 class="footer__title">Contact</h3>
+        <address class="footer__address">4 rue tharaddin <br>25200 Montbéliard<br>
+          <a href="tel:0384542727">07 65 25 33 12</a><br>
+          <a href="mailto:khadidja.keffous@gmail.com">khadidja@keffous.com</a>
+        </address>
+      </div>
+  
+      <div class="footer__social">
+        <h3 class="footer__title">Nous suivre</h3>
+        <ul class="footer__list list-unstyled">
+          <li><a href="https://facebook.com" aria-label="facebook"><img src="assets/icones/icon_facebook.svg" alt="icone facebook"></a></li>
+          <li><a href="https://instagram.com" aria-label="instagram"><img src="assets/icones/icon_instagram.svg" alt="icone instagram"></a></li>
+          <li><a href="https://twitter.com" aria-label="twitter"><img src="assets/icones/icon_twitter.svg" alt="icone twitter"></a></li>
+          <li><a href="https://youtube.com" aria-label="youtube"><img src="assets/icones/icon_youtube.svg" alt="icone youtube"></a></li>
+        </ul>
+      </div> 
+  
+      <img class="footer__gb" src="assets/icones/logo-grand-belfort.svg" alt="Logo du Grand Belfort">
+    </footer>
+     
+ 
+    <!-- Fin du pied de page -->
+    
+</body>
+</html>
