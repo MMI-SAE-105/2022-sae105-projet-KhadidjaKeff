@@ -1,15 +1,25 @@
 .header__nav{
     background-color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     position: fixed;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    list-style: none;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(0, 0, 0);
+        display: grid;
+        place-content: center;
 }
+
+.header__menu-btn {
+
+        position: relative;
+        z-index: 10;
+}
+
+.noscroll,
+ .noscroll body {
+    overflow: hidden;
+      }
 
 .menu_item {
     font-style: --Mulish;
