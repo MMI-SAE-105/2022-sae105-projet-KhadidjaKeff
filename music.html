@@ -1,0 +1,174 @@
+<html lang="fr"x-data="{menuIsOpen: false}" x-bind:class="{noscroll:menuIsOpen,}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'inspiration ne vient pas ? Essayez ça !</title>
+
+  <!--CSS -->
+
+  <link rel="stylesheet" href="./src/css/styles.css">
+  <link rel="stylesheet" href="./src/css/styles.css">
+  <link rel="shortcut icon" href="/public/favicon/LOGO blck.ico" type="image/x-icon">
+  <script src="https://unpkg.com/alpinejs" defer></script> 
+
+  <!--FONTS-->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+    <!--En-tête de page--> 
+
+    <header class="header">
+    
+        <div class="header__start">
+          <a href="index.html">
+           <img src="/public/img/img/logoentier.png" alt="logo du site RoadMap">
+          </a>
+        </div>
+  
+  <div class="header__end">
+    <button class="header__search">
+      <img src="/public/img/icone/recherche.svg" alt="icone de recherche">
+    </button>
+  </div>
+
+  <button class="header__lang">
+    <a href="/musique.html">
+        <img src="/public/img/icone/🦆 icon _language outline_.svg" alt="icone de langage">
+      </a>
+  </button>
+   
+    <button class="header__menu-btn" 
+            @click="menuIsOpen = !menuIsOpen" 
+            :class="menuIsOpen && 'menu-btn--open'">
+      <span class="menu-btn__bar"></span>
+      <img src="/public/img/icone/menu.svg" alt="icone de menu">
+    </button>
+  
+    <!--Menu principal -->
+    
+    <div x-data="show">
+      <button>
+        <span class="menu-btn__bar"></span>
+      </button>
+      <nav id="MainNav" class="header__nav" x-show="menuIsOpen" x-transition>
+  
+        <ul class="menu__list">
+          <li class="header__nav--item"><a class="menu_item" href="lieu.html">Lieux à découvrir </a></li>
+          <li class="header__nav--item"><a class="menu_item" href="musique.html"> Une chanson pour s'évader </a></li>
+          <li class="header__nav--item"><a class="menu_item" href="livre.html"> Un carnet à découvrir </a></li>
+          <li class="header__nav--item"><a class="menu_item" href="regret.html"> Le regret de ma génération</a></li>
+          <li class="header__nav--item"><a class="menu_item" href="espoir.html">L'espoir de ma génération </a></li>
+          <li class="header__nav--item"><a class="menu_item" href="glossaire.html">Glossaire</a></li>
+          <li class="header__nav--item"><a class="menu_item" href="projets.html">Autres Projets</a></li>
+          <li class="header__nav--item"><a class="menu_item" href="film.html">Film</a></li>
+          <li class="header__nav--item"><a class="menu_item" href="contact.html"> Contact </a></li>
+          <li class="header__nav--item"><a class="menu_item" href="apropos.html"> À propos </a></li>
+        </ul>
+      </nav>
+    </div>
+  
+      </header>
+
+    <h1>No Inspiration ? Try Psychédelic Pop !</h1>
+    <h2 class="sub_titles">Tame Impala, One More Hour, The slow Rush</h2>
+
+
+    <div class="header__intro">
+        <img src="/public/img/header__intro/musique-illu.svg" alt="Illustration">
+      </div>
+
+
+     <img class="images" src="/public/img/img/article_musique/slowrush.webp" alt="cover of the Album The slow rush">
+    <p>
+        <em>The first time someone asked us for an autograph was the moment we realized
+         we were doing something that most people spend their teenage years dreaming about, for sure.
+    Kevin Parker</em>
+    </p>
+    <h2 class="second_titles">
+        A group of geniuses
+    </h2>
+    <p>
+
+        Tame Impala is an Australian band that mixes pop, rock and neopsychedelic. 
+        This musical project was created in 2007 by Kevin Parker, today there are 5 members:
+        Kevin Parker, Dominic Simper, Jay Watson, Cam Avery and Julien Barbagallo.
+        They have almost a dozen albums, the first, called Live at the Corner, was released in 2010 and the last album of Tame Impala is The Slow Rush released in 2020.
+        <br> 
+
+        What makes this group strong & stronger is their ability to innovate, to produce sounds that seem quite similar and at the same time completely different, interesting, and hypnotizing. 
+        
+    
+    </p>
+
+    <img src="/public/img/img/article_musique/kevinparker.webp" alt="Kevin Parker for a shooting">
+
+    <h2 class="second_titles">
+        NEOPSYCHOC-WHAT ?
+    </h2>
+    <p>
+       
+        Psychedelism is a movement of counter-culture that appeared in the 60s, this movement holds as argument the correlation between artistic activities (painting, drawing, music…) and the consumption of psychotropics in order to experiment the art of the soul…
+        The neopsychedelic is a musical genre that takes for base the psychedelic music of the 60s, it consists of repeated rhythms, hypnotic, bands of long sounds, effects of distortions and even side effects that mix all things.        
+    </p>
+
+    <h2 class="second_titles">
+        Points to check with all songs    </h2>
+
+<p>Music has to be : </p>
+
+   <ul>
+    <li>A way to escape, to dream </li>
+    <li>Something you like (melody, rhythm, lyrics) </li>
+    <li>Something that you could listen to by doing any activity </li>
+    <li>The most important thing : something that makes you want to act & react</li>
+   </ul>
+
+   <img src="/public/img/img/article_musique/groupeTI.webp" alt="Tame Impala Group">
+
+
+   <h2 class="second_titles">
+    À vous d'écouter
+</h2>
+
+<video controls src="" poster="/public/img/img/article_musique/coverslowrush.webp"></video>
+
+   <!--<button><span>
+    <img src="/public/img/icone/" alt="">
+   </span></button> -->
+
+
+       <!-- Pied de page --> 
+
+       <footer class="footer">
+        <h3 class="footercategorie"> Follow us</h3>
+      
+        <nav class="footerborder">
+          <a class="footeritem4" href="about.html"> About
+          </a>
+          <a class="footeritem5" href="engcontact.html">Contact
+          </a>
+          <a class="footeritem6" href="glossary.html">Glossary
+          </a>
+          <a class="footeritem7" href="projects.html"> Other projects
+          </a>
+        </nav
+        <div>
+          <h3 class="footercategorie"> Legal Mentions</h3>
+          <p class="footerexercice">Project made as part of an exercise 
+            in the  <a href="https://mmi-montbeliard.nathanvanbignootvincler.fr/%22%3E"></a> MMi department in Montbéliard. 
+        </div>
+        </footer>
+  
+   
+      <!-- Fin du pied de page -->
+
+
+</body>
+</html>
