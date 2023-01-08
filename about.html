@@ -1,0 +1,131 @@
+<html lang="fr" x-data="{menuIsOpen: false}" x-bind:class="{noscroll:menuIsOpen,}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="index_title">roadmap</title>
+      
+      <!--CSS -->
+
+      <link rel="stylesheet" href="./src/css/styles.css">
+      <link rel="stylesheet" href="./src/css/styles.css">
+      <link rel="shortcut icon" href="/public/favicon/LOGO blck.ico" type="image/x-icon">
+      <script src="https://unpkg.com/alpinejs" defer></script> 
+
+      <!--FONTS-->
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--En-tête de page--> 
+
+    <header class="header">
+    
+      <div class="header__start">
+        <a href="index.html">
+         <img src="/public/img/img/logoentier.png" alt="logo du site RoadMap">
+        </a>
+      </div>
+
+<div class="header__end">
+  <button class="header__search">
+    <img src="/public/img/icone/recherche.svg" alt="icone de recherche">
+  </button>
+</div>
+ 
+<button class="header__lang">
+  <a href="/about.html">
+    <img src="/public/img/icone/🦆 icon _language outline_.svg" alt="icone de langage">
+  </a>
+</button>
+
+  <button class="header__menu-btn" 
+          @click="menuIsOpen = !menuIsOpen" 
+          :class="menuIsOpen && 'menu-btn--open'">
+    <span class="menu-btn__bar"></span>
+    <img src="/public/img/icone/menu.svg" alt="icone de menu">
+  </button>
+
+  <!--Menu principal -->
+  
+  <div x-data="show">
+    <button>
+      <span class="menu-btn__bar"></span>
+    </button>
+    <nav id="MainNav" class="header__nav" x-show="menuIsOpen" x-transition>
+
+      <ul class="menu__list">
+        <li class="header__nav--item"><a class="menu_item" href="lieu.html">Lieux à découvrir </a></li>
+        <li class="header__nav--item"><a class="menu_item" href="musique.html"> Une chanson pour s'évader </a></li>
+        <li class="header__nav--item"><a class="menu_item" href="livre.html"> Un carnet à découvrir </a></li>
+        <li class="header__nav--item"><a class="menu_item" href="regret.html"> Le regret de ma génération</a></li>
+        <li class="header__nav--item"><a class="menu_item" href="espoir.html">L'espoir de ma génération </a></li>
+        <li class="header__nav--item"><a class="menu_item" href="glossaire.html">Glossaire</a></li>
+        <li class="header__nav--item"><a class="menu_item" href="projets.html">Autres Projets</a></li>
+        <li class="header__nav--item"><a class="menu_item" href="film.html">Film</a></li>
+        <li class="header__nav--item"><a class="menu_item" href="contact.html"> Contact </a></li>
+        <li class="header__nav--item"><a class="menu_item" href="apropos.html"> À propos </a></li>
+      </ul>
+    </nav>
+  </div>
+
+    </header>
+
+    <h1> About me, About MMI </h1>
+    <h2 class="sub_titles"> Roadmap </h2>
+
+    <div class="header__intro">
+      <img src="/public/img/header__intro/contact-illu.svg" alt="Illustration">
+    </div>
+<p> 
+This project was entrusted by the pedagogical team of the BUT MMI of the IUT Belfort-Montbéliard to its first year students. </p>
+
+<p> My name is Khadidja KEFFOUS and I am one of the students of the MMI department of Montbéliard.
+
+<br>
+
+  To know more about the MMI department :<strong>http://mmimontbeliard.com/</strong> </p>
+
+
+  <p> To know more about me : <a href="https://www.instagram.com/ikarcyn/?hl=fr">Ikarcyn</a> </p>
+
+
+
+     <!-- Pied de page --> 
+
+     <footer class="footer">
+        <h3 class="footercategorie"> Follow us </h3>
+        <ul class="footericon">
+          <a class="footeritem" href="https://www.instagram.com/mmi_montbeliard/%22%3E"
+            < img src="public/img/icone/INsta.svg" alt="instagram MMI">
+          </a>
+          <a class="footeritem2" href="https://t.co/dzVvmIOrfw%22%3E"
+            < img src="/public/img/icone/fb.svg" alt="facebook MMI">
+          </a>
+          <a class="footeritem3" href="https://twitter.com/mmimontbeliard%22%3E"
+          </a>
+        </ul>
+        <nav class="footerborder">
+          <a class="footeritem4" href="/about.html"> About
+          </a>
+          <a class="footeritem5" href="/engcontact.html">Contact
+          </a>
+          <a class="footeritem6" href="/glossary.html">Glossaire
+          </a>
+          <a class="footeritem7" href="/projects.html"> Other projects
+          </a>
+        </nav>
+        <div>
+          <h3 class="footercategorie">Mentions légales</h3>
+          <p class="footerexercice">Projet réalisé dans le cadre d’un exercice 
+            pédagogique au département <a href="https://mmi-montbeliard.nathanvanbignootvincler.fr/%22%3E"></a> MMi de Montbéliard.
+        </div>
+        </footer>
+
+
+</body>
+</html>
