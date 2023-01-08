@@ -23,7 +23,7 @@
 
 .menu_item {
     font-style: --Mulish;
-    font-size: 40;
+    font-size: 30;
     color: white;
     display: flex;
     flex-direction: column;
