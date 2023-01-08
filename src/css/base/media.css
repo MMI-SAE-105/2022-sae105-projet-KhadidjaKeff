@@ -1,9 +1,12 @@
 img {
-    border-style: none;
+  border-style: none;
+  align-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  border-radius: 15px;
+padding: 10;
   
-  }
+ }
 
-.images {
-  max-width: 100%;
-  width: 400px;
-}
