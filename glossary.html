@@ -1,0 +1,132 @@
+<html lang="fr" x-data="{menuIsOpen: false}" x-bind:class="{noscroll:menuIsOpen,}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossaire</title>
+
+         <!--CSS -->
+
+         <link rel="stylesheet" href="./src/css/styles.css">
+         <link rel="stylesheet" href="./src/css/styles.css">
+         <link rel="shortcut icon" href="/public/favicon/LOGO blck.ico" type="image/x-icon">
+         <script src="https://unpkg.com/alpinejs" defer></script> 
+   
+         <!--FONTS-->
+   
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/src/css/styles.css">
+</head>
+<body>
+
+    <!--En-tête de page--> 
+
+    <header class="header">
+    
+        <div class="header__start">
+          <a href="index.html">
+           <img src="/public/img/img/logoentier.png" alt="logo du site RoadMap">
+          </a>
+        </div>
+  
+  <div class="header__end">
+    <button class="header__search">
+      <img src="/public/img/icone/recherche.svg" alt="icone de recherche">
+    </button>
+  </div>
+   
+  <button class="header__lang">
+    <img src="/public/img/icone/🦆 icon _language outline_.svg" alt="icone de langage">
+  </button>
+
+    <button class="header__menu-btn" 
+            @click="menuIsOpen = !menuIsOpen" 
+            :class="menuIsOpen && 'menu-btn--open'">
+      <span class="menu-btn__bar"></span>
+      <img src="/public/img/icone/menu.svg" alt="icone de menu">
+    </button>
+  
+    <!--Menu principal -->
+    
+    <div x-data="show">
+      <button>
+        <span class="menu-btn__bar"></span>
+      </button>
+      <nav id="MainNav" class="header__nav" x-show="menuIsOpen" x-transition>
+  
+        <ul class="menu__list">
+            <li class="header__nav--item"><a class="menu_item" href="place.html"> Places to know </a></li>
+            <li class="header__nav--item"><a class="menu_item" href="music.html"> A music to vibe </a></li>
+            <li class="header__nav--item"><a class="menu_item" href="book.html"> Reading discovery </a></li>
+            <li class="header__nav--item"><a class="menu_item" href="engregret.html"> Generational Regret</a></li>
+            <li class="header__nav--item"><a class="menu_item" href="hope.html"> Generational Hope</a></li>
+            <li class="header__nav--item"><a class="menu_item" href="glossary.html">Glossary </a></li>
+            <li class="header__nav--item"><a class="menu_item" href="projects.html"> Other rojects</a></li>
+            <li class="header__nav--item"><a class="menu_item" href="movie.html"> Movie</a></li>
+            <li class="header__nav--item"><a class="menu_item" href="engcontact.html"> Contact </a></li>
+            <li class="header__nav--item"><a class="menu_item" href="about.html"> About </a></li>
+          </ul>
+      </nav>
+    </div>
+  
+      </header>
+
+    <h1 class="Table-title">Glossary</h1>
+
+  <div class="header__intro">
+        <img src="/public/img/header__intro/glossaire-illu.svg" alt="Illustration">
+    </div>
+
+    
+<div class="content_table">
+    <table class="content-table">
+        <thead>
+            <tr>
+                <th> Word</th>
+                <th>Definition</th>
+                <th><link rel="stylesheet" href=""></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Music</td>
+                <td>néopsychdélique</td>
+                <td>
+                    <a href="https://fr.wikipedia.org/wiki/Musique_psych%C3%A9d%C3%A9lique"> Wikipédia</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Musique</td>
+                <td>flanger effect</td>
+                <td>   
+                  <a href="https://fr.wikipedia.org/wiki/Flanger"> Wikipédia</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Place</td>
+                <td>arborescence</td>
+                <td> 
+                   <a href="https://dictionnaire.lerobert.com/definition/arborescence">le Robert</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Regret</td>
+                <td>paradoxe Abilène</td>
+                <td>
+                    <a href="https://fr.wikipedia.org/wiki/Paradoxe_d%27Abilene">Wikipédia</a>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+</body>
+</html>

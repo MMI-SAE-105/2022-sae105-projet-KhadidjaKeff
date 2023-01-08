@@ -1,0 +1,165 @@
+<html lang="fr" x-data="{menuIsOpen: false}" x-bind:class="{noscroll:menuIsOpen,}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title class="index_title">roadmap</title>
+      
+      <!--CSS -->
+
+      <link rel="stylesheet" href="./src/css/styles.css">
+      <link rel="stylesheet" href="./src/css/styles.css">
+      <link rel="shortcut icon" href="/public/favicon/LOGO blck.ico" type="image/x-icon">
+      <script src="https://unpkg.com/alpinejs" defer></script> 
+
+      <!--FONTS-->
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--En-tête de page--> 
+
+    <header class="header">
+    
+      <div class="header__start">
+        <a href="index.html">
+         <img src="/public/img/img/logoentier.png" alt="logo du site RoadMap">
+        </a>
+      </div>
+
+
+<div class="header__end">
+  <button class="header__search">
+    <img src="/public/img/icone/recherche.svg" alt="icone de recherche">
+  </button>
+</div>
+
+  <button class="header__lang">
+    <a
+    <img src="/public/img/icone/🦆 icon _language outline_.svg" alt="icone de langage">
+  </button>
+
+  <button class="header__menu-btn" 
+          @click="menuIsOpen = !menuIsOpen" 
+          :class="menuIsOpen && 'menu-btn--open'">
+    <span class="menu-btn__bar"></span>
+    <img src="/public/img/icone/menu.svg" alt="icone de menu">
+  </button>
+
+ 
+
+  <!--Menu principal -->
+  
+  <div x-data="show">
+    <button>
+      <span class="menu-btn__bar"></span>
+    </button>
+    <nav id="MainNav" class="header__nav" x-show="menuIsOpen" x-transition>
+
+        <ul class="menu__list">
+            <li class="header__nav--item"><a class="menu_item" href="place.html"> Places to know </a></li>
+            <li class="header__nav--item"><a class="menu_item" href="music.html"> A music to vibe </a></li>
+            <li class="header__nav--item"><a class="menu_item" href="book.html"> Reading discovery </a></li>
+            <li class="header__nav--item"><a class="menu_item" href="engregret.html"> Generational Regret</a></li>
+            <li class="header__nav--item"><a class="menu_item" href="hope.html"> Generational Hope</a></li>
+            <li class="header__nav--item"><a class="menu_item" href="glossary.html">Glossary </a></li>
+            <li class="header__nav--item"><a class="menu_item" href="projects.html"> Other rojects</a></li>
+            <li class="header__nav--item"><a class="menu_item" href="movie.html"> Movie</a></li>
+            <li class="header__nav--item"><a class="menu_item" href="engcontact.html"> Contact </a></li>
+            <li class="header__nav--item"><a class="menu_item" href="about.html"> About </a></li>
+          </ul>
+    </nav>
+  </div>
+
+    </header>
+
+<!--CONTENU PRINCIPAL-- MAIN -->
+
+<main>
+
+<div class="mainone">
+ <div class="mainone__header">
+  <h1 class="mainone__title">roadmap</h1>
+  <h2 style="font-family: mullish ;" class="mainone__sub-title">Voyagez pour vous découvrir</h2>
+</div>
+</div>
+<div class="header__intro">
+  <img src="/public/img/header__intro/index-illu.svg" alt="Illustration">
+</div>
+
+<!-- CARDS -->
+
+<div class="mainone__card">
+  <h3 class="div1" >Pour s'inspirer </h3>
+    <a href="/film.html">
+      <img class="div2" src="/public/img/img/homepage/waltermittyhome.webp" alt="Affiche film Walter Mitty "> 
+    </a>
+
+<div class="mainone__card">
+  <h3 class="div1" >Lieux à découvrir</h3>
+     <a href="/lieu.html">
+       <img class="div2" src="/public/img/img/homepage/montainshome.webp" alt="Image de montagnes enneigées"> 
+     </a>
+
+<div class="mainone__card">
+  <h3 class="div1" >Mini lecture..</h3>
+     <a href="/livre.html">
+        <img class="div2" src="/public/img/img/homepage/carnetintimehome.webp" alt="Illustration de Zep"> 
+      </a>
+
+<div class="mainone__card">
+   <h3 class="div1" >Besoin de chantonner ?</h3>
+    <a href="/musique.html">
+      <img class="div2" src="/public/img/img/homepage/tameimpalahome.webp" alt="Cover de l'Album Tame Impala"> 
+    </a>
+
+<div class="mainone__card_e">
+   <h3 class="div1" >  Espoir </h3>
+     <a href="/espoir.html">
+       <img class="div2" src="/public/img/img/homepage/espoirhome.webp" alt="Image d'illustration, homme qui fait de la randonnée"> 
+     </a>
+
+<div class="mainone__card_r">
+    <h3 class="div1" > Regret </h3>
+      <a href="/regret.html">
+         <img class="div2" src="/public/img/img/homepage/regrethome.webp" alt="Image d'illustration, tristesse"> 
+       </a>
+
+</main>
+
+
+
+
+   <!-- Pied de page --> 
+
+   <footer class="footer">
+    <h3 class="footercategorie"> Follow us</h3>
+  
+    <nav class="footerborder">
+      <a class="footeritem4" href="about.html"> About
+      </a>
+      <a class="footeritem5" href="engcontact.html">Contact
+      </a>
+      <a class="footeritem6" href="glossary.html">Glossary
+      </a>
+      <a class="footeritem7" href="projects.html"> Other projects
+      </a>
+    </nav
+    <div>
+      <h3 class="footercategorie"> Legal Mentions</h3>
+      <p class="footerexercice">Project made as part of an exercise 
+        in the  <a href="https://mmi-montbeliard.nathanvanbignootvincler.fr/%22%3E"></a> MMi department in Montbéliard. 
+    </div>
+    </footer>
+
+     
+ 
+    <!-- Fin du pied de page -->
+    
+</body>
+</html>
