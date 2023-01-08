@@ -2,7 +2,7 @@
     position: sticky;
     background-color: #000;
     width: 100%;
-    height: 90px;
+    height: 120px;
     top: 0;
     left: 0;
     right: 3;
@@ -10,6 +10,7 @@
     padding: var(--space2x) var(--space3x);
     display:flex;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 
 .header__end {

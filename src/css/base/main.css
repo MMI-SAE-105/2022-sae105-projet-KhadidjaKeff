@@ -27,20 +27,17 @@ body {
     border: none;
   }
 
-
-
 .mainone__header {
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-position: absolute;
-width: 404.21px;
-height: 394.16px;
-left: -28px;
-top: 99px;
-
-} 
 
 .index_title {
     font-family: 'Mulish';
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
