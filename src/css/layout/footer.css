@@ -1,34 +1,116 @@
-.footer {
-    background-color: black;
-    color: black;
-    padding: var(--space4x) var(--space3x);
-  }
-  
-  footer a {
-    color: var(--gray-400);
-    text-decoration: none;
-  }
-  
-  .footer__list {
-    display: flex;
-    gap: var(--space3x);
-  }
-  
-  .footer__list img {
-    filter: invert(60%);
-  }
-  
-  .footer__address {
-    font-style: normal;
-  }
-  
-  .footer__title {
-    margin-top: 0;
-    text-transform: uppercase;
-    font-size: var(--text-sm);
-    letter-spacing: var(--letter-spacing);
-  }
-  
-  .footer > *:not(:first-child) {
-    margin-top: var(--space3x);
-  }
+.footer{
+  background-color:rgb(20, 18, 18);
+  position: absolute;
+  height: 320px;
+  margin-top: 50;
+}
+
+.footercategorie{
+  font-family: 'inter';
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  padding-top: 15px;
+  color: #ffffff; 
+  margin-top: 5px;
+}
+
+.footeritem{
+  position: absolute;
+  left: 36%;
+  right: 59.73%;
+  top: 50px;
+  bottom: 73.02%;
+  padding-bottom: 40px;
+}
+
+.footeritem2{
+  position: absolute;
+  left: 48.53%;
+  right: 48.8%;
+  top: 50px;
+  bottom: 73.02%;
+}
+
+.footeritem3{
+  position: absolute;
+  left: 58.4%;
+  right: 37.07%;
+  top: 51px;
+  bottom: 73.41%;
+}
+
+.footeritem4{
+  line-height: 40px;
+  width: 67px;
+  padding-left: 15px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  color: #ffffff;
+}
+
+.footeritem5{
+  width: 67px;
+  padding-left: 20px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  color: #ffffff;
+}
+
+.footeritem6{
+  width: 67px;
+  padding-left: 20px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  color: #ffffff;
+}
+
+.footeritem7{
+  width: 67px;
+  padding-left: 20px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  color: #ffffff;
+}
+
+.footerborder{
+  border-bottom: 1px solid #ffffff;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+
+.footerexercice{
+ font-family: 'Inter';
+ font-style: normal;
+ font-weight: 400;
+ font-size: 13px;
+ color: #ffffff;
+ margin-left: 5px;
+ text-align: center;
+}
+
+.footer__icon{
+ line-height: 50px; 
+ margin-top: 30px;
+
+ border-bottom: 1px solid #ffffff;
+ padding-bottom: 30px;
+ margin-left: 15px;
+ margin-right: 15px;
+}

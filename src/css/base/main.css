@@ -1,5 +1,5 @@
 body {
-    font-family: var(--text);
+    font-family: 'Mulish';
     font-size: var();
     line-height: 1.6;
     background-color: var(--gray-white);
@@ -8,7 +8,7 @@ body {
 
    
   h1, h2 {
-    font-family: var(--font-mono);
+    font-family: 'Mulish';
   }
    
   h1 {
@@ -16,7 +16,7 @@ body {
   }
    
   h2 {
-    font-size: var(--text-xl);
+    font-family: 'Mulish';
   }
 
   p {
