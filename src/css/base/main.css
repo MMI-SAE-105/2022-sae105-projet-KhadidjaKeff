@@ -39,7 +39,15 @@ padding-bottom: 30;
   size: 16px;
 }
 
-
+.movie_items {
+  padding: 20;
+  list-style: none;
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-self: center;
+align-items: left;
+}
 
   p {
     font-family: 'Mulish';
