@@ -27,6 +27,18 @@
     background-color: transparent;
 }
 
+.header__lang {
+    width: 40px;
+    margin: none;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
 .header__menu-btn {
     width: 40px;
     margin: none;
