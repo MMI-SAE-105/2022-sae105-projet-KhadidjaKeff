@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "ROADMAP",
+			"path": "."
+		},
+		{
+			"name": "export",
+			"path": "../../../Downloads/export"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "ROADMAP"
+	}
+}
