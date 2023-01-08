@@ -1,8 +1,8 @@
 .header__intro {
 margin: auto;
-padding: 60;
-width: 404.21px;
-height: 394.16px;
+padding: 10;
+/*width: 404.21px;
+height: 394.16px;*/
 display: flex;
 flex-direction: column;
 align-self: center;
