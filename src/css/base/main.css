@@ -27,6 +27,19 @@ body {
     border: none;
   }
 
+.header__start {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+}
+
+.header__end{
+  display: flex;
+  flex-direction: row;
+  
+}
+
 .mainone__header {
   display: flex;
   flex-direction: column;
