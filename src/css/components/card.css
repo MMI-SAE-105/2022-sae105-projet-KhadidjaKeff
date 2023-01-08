@@ -7,3 +7,8 @@
     padding: px;
     }
 
+.mainone__card_e, .mainone__card_r {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

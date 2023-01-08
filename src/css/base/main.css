@@ -21,6 +21,10 @@ body {
     font-family: 'Mulish';
   }
 
+h3 {
+  font-family: 'Mulish';
+}
+
 .sub_titles {
   font-family: 'Stix Two Text',serif;
   text-align: center;
