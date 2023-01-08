@@ -1,11 +1,19 @@
 .Table-title{
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Staatliches";
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+.content_table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
 
 .content-table{
+    align-items: center;
     border-collapse: collapse;
     margin: 25px 0;
     font-size: 0.9em;
@@ -25,6 +33,7 @@
 
 .content-table th,
 .content-table td {
+    align-items: center;
     padding: 12px 15px;
 }
 
