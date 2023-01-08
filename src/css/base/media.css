@@ -1,4 +1,9 @@
 img {
     border-style: none;
-
+  
   }
+
+.images {
+  max-width: 100%;
+  width: 400px;
+}
