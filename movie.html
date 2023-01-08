@@ -1,0 +1,162 @@
+<html lang="fr" x-data="{menuIsOpen: false}" x-bind:class="{noscroll:menuIsOpen,}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Une Ode à la joie, au bonheur véritable</title>
+
+     <!--CSS -->
+
+     <link rel="stylesheet" href="./src/css/styles.css">
+     <link rel="stylesheet" href="./src/css/styles.css">
+     <link rel="shortcut icon" href="/public/favicon/LOGO blck.ico" type="image/x-icon">
+     <script src="https://unpkg.com/alpinejs" defer></script> 
+     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+
+     <!--FONTS-->
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/src/css/styles.css">
+
+</head>
+<body>
+
+        <!--En-tête de page--> 
+
+        <header class="header">
+    
+            <div class="header__start">
+              <a href="index.html">
+               <img src="/public/img/img/logoentier.png" alt="logo du site RoadMap">
+              </a>
+            </div>
+      
+      <div class="header__end">
+        <button class="header__search">
+          <img src="/public/img/icone/recherche.svg" alt="icone de recherche">
+        </button>
+      </div>
+       
+      <button class="header__lang">
+        <a href="/film.html">
+            <img src="/public/img/icone/🦆 icon _language outline_.svg" alt="icone de langage">
+           </a>
+      </button>
+
+        <button class="header__menu-btn" 
+                @click="menuIsOpen = !menuIsOpen" 
+                :class="menuIsOpen && 'menu-btn--open'">
+          <span class="menu-btn__bar"></span>
+          <img src="/public/img/icone/menu.svg" alt="icone de menu">
+        </button>
+
+      
+        <!--Menu principal -->
+        
+        <div x-data="show">
+          <button>
+            <span class="menu-btn__bar"></span>
+          </button>
+          <nav id="MainNav" class="header__nav" x-show="menuIsOpen" x-transition>
+      
+            <ul class="menu__list">
+              <li class="header__nav--item"><a class="menu_item" href="place.html"> Places to know </a></li>
+              <li class="header__nav--item"><a class="menu_item" href="music.html"> A music to vibe </a></li>
+              <li class="header__nav--item"><a class="menu_item" href="book.html"> Reading discovery </a></li>
+              <li class="header__nav--item"><a class="menu_item" href="engregret.html"> Generational Regret</a></li>
+              <li class="header__nav--item"><a class="menu_item" href="hope.html"> Generational Hope</a></li>
+              <li class="header__nav--item"><a class="menu_item" href="glossary.html">Glossary </a></li>
+              <li class="header__nav--item"><a class="menu_item" href="projects.html"> Other rojects</a></li>
+              <li class="header__nav--item"><a class="menu_item" href="movie.html"> Movie</a></li>
+              <li class="header__nav--item"><a class="menu_item" href="engcontact.html"> Contact </a></li>
+              <li class="header__nav--item"><a class="menu_item" href="about.html"> About </a></li>
+            </ul>
+          </nav>
+        </div>
+      
+          </header>
+
+    <h1> STOP DREAMING, START LIVING </h1>
+       <h2 class="sub_titles"> The Secret Life of Walter, 2013</h2>
+
+       <div class="header__intro">
+        <img src="/public/img/header__intro/index-illu.svg" alt="Illustration">
+      </div>
+
+<p> 
+    The secret life of Walter Mitty is the story of a bureaucrat, Walter, who can’t help but always daydream, unfortunately, these moments of dreams prevent him from actually being present and actor of his own life.
+He has never done much in his life, because he has not been able to seize the opportunities that present themselves to him...
+Everything changes when he realizes the missing film of the newspaper he has to take care of, this film never arrived at the office.
+He then decides to take his courage with both hands, find the photographer and the famous film.
+
+</p>
+
+<img class="images" src="/public/img/img/article_film/mitty case homepage.webp" alt="Affiche Oficielle du film La vie rêvée de Walter Mitty">
+
+
+<h2 class="second_titles" >
+    There is something about Ben Stiller..
+</h2>
+
+<p>
+    Ben Stiller was born on November 30, 1965 in New York, his parents are both actors which plunges him into the world of entertainment very early.
+He is a renowned producer, actor and comedian who has had many successes.
+He has directed cult films such as: There’s something about marry, Zoolander, Tropic’s thunder.
+
+</p>
+
+<h2 class="second_titles" > What you must remember from the movie : </h2>
+
+<ul>
+    <li>We must act as soon as we can, whenever we want</li>
+    <li>Life is made of the unexpected </li>
+    <li>You have to experiment to understand things</li>
+    <li>True happiness comes from simple things</li>
+    <li>and love comes little by little, when not expected</li>
+</ul>
+
+ <h2 class="second_titles" > Quelques plans du film </h2>
+
+
+ <div class="carousel">
+    <div class="carousel__item"><img src="/public/img/img/article_film/image 1.webp" alt="plan Walter Mitty"></div>
+    <div class="carousel__item"><img src="/public/img/img/article_film/image 2.webp" alt="musique"></div>
+    <div class="carousel__item"><img src="/public/img/img/article_film/image 3.webp" alt="musique"></div>
+    <div class="carousel__item"><img src="/public/img/img/article_film/image 4.webp" alt="musique"></div>
+  </div>
+  
+</div>
+
+
+
+
+    <!-- Pied de page --> 
+
+    <footer class="footer">
+        <h3 class="footercategorie"> Follow us</h3>
+      
+        <nav class="footerborder">
+          <a class="footeritem4" href="@.html"> About
+          </a>
+          <a class="footeritem5" href="contact.html">Contact
+          </a>
+          <a class="footeritem6" href="glossaire.html">Glossary
+          </a>
+          <a class="footeritem7" href="projets.html"> Other projects
+          </a>
+        </nav
+        <div>
+          <h3 class="footercategorie"> Legal Mentions</h3>
+          <p class="footerexercice">Project made as part of an exercise 
+            in the  <a href="https://mmi-montbeliard.nathanvanbignootvincler.fr/%22%3E"></a> MMi department in Montbéliard. 
+        </div>
+        </footer>
+  
+  </body>
+
+    </body>
+</html>
+
