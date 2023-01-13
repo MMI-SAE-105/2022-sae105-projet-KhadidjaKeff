@@ -1,0 +1,137 @@
+<html lang="fr" x-data="{menuIsOpen: false}" x-bind:class="{noscroll:menuIsOpen,}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Autres projets </title>
+
+<!--CSS -->
+
+  <link rel="stylesheet" href="./src/css/styles.css">
+  <link rel="stylesheet" href="./src/css/styles.css">
+  <link rel="shortcut icon" href="/public/favicon/LOGO blck.ico" type="image/x-icon">
+  <script src="https://unpkg.com/alpinejs" defer></script> 
+
+
+<!--FONTS-->
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!--En-tête de page--> 
+
+    <header class="header">
+    
+        <div class="header__start">
+          <a href="index.html">
+           <img src="/public/img/img/logoentier.png" alt="logo du site RoadMap">
+          </a>
+        </div>
+  
+  <div class="header__end">
+    <button class="header__search">
+      <img src="/public/img/icone/recherche.svg" alt="icone de recherche">
+    </button>
+  </div>
+   
+  <button class="header__lang">
+    <a href="/pProjects.html">
+    <img src="/public/img/icone/icon_language_outline.svg" alt="icone de langage"></a>
+  </button>
+
+    <button class="header__menu-btn" 
+            @click="menuIsOpen = !menuIsOpen" 
+            :class="menuIsOpen && 'menu-btn--open'">
+      <span class="menu-btn__bar"></span>
+      <img src="/public/img/icone/menu.svg" alt="icone de menu">
+    </button>
+  
+    <!--Menu principal -->
+    
+    <div x-data="show">
+      <button>
+        <span class="menu-btn__bar"></span>
+      </button>
+      <nav id="MainNav" class="header__nav" x-show="menuIsOpen" x-transition>
+  
+        <ul class="menu__list">
+          <li class="header__nav--item"><a class="menu_item" href="lieu.html">Lieux à découvrir </a></li>
+          <li class="header__nav--item"><a class="menu_item" href="musique.html"> Une chanson pour s'évader </a></li>
+          <li class="header__nav--item"><a class="menu_item" href="livre.html"> Un carnet à découvrir </a></li>
+          <li class="header__nav--item"><a class="menu_item" href="regret.html"> Le regret de ma génération</a></li>
+          <li class="header__nav--item"><a class="menu_item" href="espoir.html">L'espoir de ma génération </a></li>
+          <li class="header__nav--item"><a class="menu_item" href="glossaire.html">Glossaire</a></li>
+          <li class="header__nav--item"><a class="menu_item" href="projets.html">Autres Projets</a></li>
+          <li class="header__nav--item"><a class="menu_item" href="film.html">Film</a></li>
+          <li class="header__nav--item"><a class="menu_item" href="contact.html"> Contact </a></li>
+          <li class="header__nav--item"><a class="menu_item" href="apropos.html"> À propos </a></li>
+        </ul>
+      </nav>
+    </div>
+  
+      </header>
+  
+ 
+     <h1> Autres Projets </h1>
+
+     <div class="header__intro">
+      <img src="/public/img/header__intro/projets-illu.svg" alt="Illustration">
+    </div>
+
+     <ul class="liste">
+     <li> <a href="https://kairos.marwa-nezzar.fr/fr/">Time Capsule : Noah Lafourcade </a></li>
+     <li> <a href="https://vers-un-monde-utopique.albanluc.fr/ "> Bosnian Memory : Minel Kujundzic  </a></li>
+     <li> À toi, bien des années plus tard : Hugo Paillard </li>
+     <li><a href="https://denunciationofthecurrentworld.mouadeb.fr/"> Noirceur : Guillaume  Le Trequesser </a></li>
+     <li> <a href ="https://continuous-evolution.yann-pernette.fr/">Random Things Anecdotes : Paul Marchiset </a></li>
+     <li> <a href="https://mind-interest.marionmura.fr/">Time Revenge : Jules </a></li>
+     <li><a href=" https://wiwtb18.romane-miguel.fr/">Friendship : Corentin Joannes</a></li>
+     <li><a href="https://what-have-we-become.evanmoulin.fr/fr/">Move On : Logan Martinez</a></li>
+     <li><a href="https://what-have-we-become.evanmoulin.fr/fr/">CAP : Maxime LEGRAND</a></li>
+
+     </ul>
+     </div>
+ </main>
+
+
+
+     <!-- Pied de page --> 
+
+     <footer class="footer">
+        <h3 class="footercategorie">Follow us</h3>
+        <ul class="footericon">
+          <a class="footeritem" href="https://www.instagram.com/mmi_montbeliard/%22%3E"
+            < img src="public/img/icone/INsta.svg" alt="instagram MMI">
+          </a>
+          <a class="footeritem2" href="https://t.co/dzVvmIOrfw%22%3E"
+            < img src="/public/img/icone/fb.svg" alt="facebook MMI">
+          </a>
+          <a class="footeritem3" href="https://twitter.com/mmimontbeliard%22%3E"
+          </a>
+        </ul>
+        <nav class="footerborder">
+          <a class="footeritem4" href="apropos.html"> About
+          </a>
+          <a class="footeritem5" href="contact.html">Contact
+          </a>
+          <a class="footeritem6" href="glossaire.html">Glossary
+          </a>
+          <a class="footeritem7" href="projets.html"> Other projects
+          </a>
+        </nav>
+        <div>
+            <h3 class="footercategorie"> Legal Mentions</h3>
+            <p class="footerexercice">Project made as part of an exercise 
+              in the  <a href="https://mmi-montbeliard.nathanvanbignootvincler.fr/%22%3E"></a> MMi department in Montbéliard. 
+          </div>
+          </footer>
+  
+       
+      <!-- Fin du pied de page -->
+    
+</body>
+</html>
